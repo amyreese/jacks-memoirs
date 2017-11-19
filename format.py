@@ -8,13 +8,13 @@ from os import path
 patterns = [
     (re.compile(p), r) for p, r in [
         (r'[ \t]+', ' '),
-        (r'\n\n+', '\n\n'),
+        (r'\n+', '\n'),
         (r'\n[ \t]+', '\n'),
     ]
 ]
 
 
-def reformat(source, dest):
+def reformat(source, dest, wrap=False):
     print(f'{source} -> {dest}')
 
     with open(source, encoding='latin_1') as f:
@@ -23,9 +23,10 @@ def reformat(source, dest):
     for pattern, replacement in patterns:
         contents = pattern.sub(replacement, contents)
 
-    contents = '\n'.join(
-        textwrap.fill(line, width=80) for line in contents.splitlines()
-    )
+    if wrap:
+        contents = '\n'.join(
+            textwrap.fill(line, width=80) for line in contents.splitlines()
+        )
 
     with open(dest, 'w') as f:
         f.write(contents)
