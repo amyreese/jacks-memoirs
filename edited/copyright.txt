@@ -1,0 +1,8 @@
+© Copyright 2003-2017 John J. Reese, John M. Reese
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) license. 
+The terms of this license are available at the following URL:
+https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
+
+Archived source materials, in original and raw text formats, as well as the resources to compile this book, are available at the following URL:
+https://github.com/jreese/jacks-memoirs 
+
