@@ -1,2 +1,4 @@
 output
+*.pdf
+*.idlk
 .DS_Store
